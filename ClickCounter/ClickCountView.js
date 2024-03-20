@@ -8,6 +8,11 @@ App.ClickCountView = (clickCounter, updateEl) => {
         updateView() {
             updateEl.innerHTML = clickCounter.getValue()
         },
+
+        increaseAndUpdateView() {
+            clickCounter.increase()
+            this.updateView()
+        }
     }
 }
 
