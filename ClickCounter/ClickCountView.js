@@ -10,8 +10,8 @@ App.ClickCountView = (clickCounter, options) => {
         },
 
         increaseAndUpdateView() {
-            clickCounter.increase()
-            this.updateView()
+            clickCounter.count();
+            this.updateView();
         }
     };
 

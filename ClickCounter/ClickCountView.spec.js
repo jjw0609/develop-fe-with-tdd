@@ -30,10 +30,10 @@ describe('App.ClickCountView 모듈', () => {
     })
 
     describe('increaseAndUpdateView()는', ()=> {
-        it('ClickCounter의 increase 를 실행한다', ()=> {
-            spyOn(clickCounter, 'increase')
+        it('ClickCounter의 count 를 실행한다', ()=> {
+            spyOn(clickCounter, 'count')
             view.increaseAndUpdateView()
-            expect(clickCounter.increase).toHaveBeenCalled()
+            expect(clickCounter.count).toHaveBeenCalled()
         })
 
         it('updateView를 실행한다', ()=> {
